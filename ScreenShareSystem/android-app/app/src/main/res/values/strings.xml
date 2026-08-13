@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Screen Share</string>
+    <string name="hint_ip">IP do servidor (ex: 192.168.0.10)</string>
+    <string name="hint_port">Porta</string>
+    <string name="btn_connect">Conectar</string>
+    <string name="btn_add_screen">+</string>
+    <string name="btn_fullscreen">Tela Cheia</string>
+    <string name="btn_rotate">Girar</string>
+    <string name="btn_screenshot">Print</string>
+    <string name="fps_30">30 FPS</string>
+    <string name="fps_60">60 FPS</string>
+    <string name="connecting_countdown">Conectando… %1$d s</string>
+    <string name="connection_timeout">Tempo esgotado ao conectar</string>
+    <string name="connection_failed">Falha na conexão</string>
+    <string name="connection_closed">Conexão encerrada</string>
+    <string name="select_monitor_title">Escolha a tela para compartilhar</string>
+    <string name="screenshot_saved">Print salvo na galeria</string>
+    <string name="screenshot_failed">Não foi possível salvar o print</string>
+    <string name="no_frame_yet">Aguardando imagem…</string>
+    <string name="tab_screen_format">Tela %1$d</string>
+    <string name="dialog_add_title">Nova conexão</string>
+    <string name="dialog_cancel">Cancelar</string>
+
+    <string name="btn_mouse_off">🖱️ Mouse: OFF</string>
+    <string name="btn_mouse_on">🖱️ Mouse: ON</string>
+    <string name="mouse_settings_title">Destaque do mouse</string>
+    <string name="label_highlight_size">Tamanho do destaque</string>
+    <string name="label_highlight_opacity">Transparência</string>
+    <string name="label_click_duration">Duração da animação de clique</string>
+    <string name="label_click_effects">Efeitos de clique</string>
+    <string name="btn_close">Fechar</string>
+</resources>

@@ -1,0 +1,148 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.screenshare.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Necessárias para conectar ao servidor Python via IP local (ws://) -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:5:5-67
+12-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:6:5-79
+13-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:6:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:7:5-76
+14-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:7:22-73
+15    <!-- Necessária para salvar prints em versões antigas do Android -->
+16    <uses-permission
+16-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:9:5-11:38
+17        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+17-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:10:9-65
+18        android:maxSdkVersion="28" />
+18-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:11:9-35
+19
+20    <permission
+20-->[androidx.core:core:1.13.1] C:\Users\gianc\.gradle\caches\transforms-4\977f06a6b0b1cbe9a737a9134def6fd7\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+21        android:name="com.screenshare.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+21-->[androidx.core:core:1.13.1] C:\Users\gianc\.gradle\caches\transforms-4\977f06a6b0b1cbe9a737a9134def6fd7\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+22        android:protectionLevel="signature" />
+22-->[androidx.core:core:1.13.1] C:\Users\gianc\.gradle\caches\transforms-4\977f06a6b0b1cbe9a737a9134def6fd7\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+23
+24    <uses-permission android:name="com.screenshare.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+24-->[androidx.core:core:1.13.1] C:\Users\gianc\.gradle\caches\transforms-4\977f06a6b0b1cbe9a737a9134def6fd7\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.13.1] C:\Users\gianc\.gradle\caches\transforms-4\977f06a6b0b1cbe9a737a9134def6fd7\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+25
+26    <application
+26-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:13:5-31:19
+27        android:allowBackup="true"
+27-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:14:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.13.1] C:\Users\gianc\.gradle\caches\transforms-4\977f06a6b0b1cbe9a737a9134def6fd7\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+29        android:debuggable="true"
+30        android:extractNativeLibs="false"
+31        android:icon="@mipmap/ic_launcher"
+31-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:15:9-43
+32        android:label="@string/app_name"
+32-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:16:9-41
+33        android:networkSecurityConfig="@xml/network_security_config"
+33-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:17:9-69
+34        android:testOnly="true"
+35        android:theme="@style/Theme.ScreenShare"
+35-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:19:9-49
+36        android:usesCleartextTraffic="true" >
+36-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:18:9-44
+37        <activity
+37-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:21:9-30:20
+38            android:name="com.screenshare.app.ui.MainActivity"
+38-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:22:13-44
+39            android:configChanges="orientation|screenSize|keyboardHidden"
+39-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:24:13-74
+40            android:exported="true"
+40-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:23:13-36
+41            android:theme="@style/Theme.ScreenShare" >
+41-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:25:13-53
+42            <intent-filter>
+42-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:26:13-29:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:27:17-69
+43-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:27:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:28:17-77
+45-->C:\Users\gianc\Desktop\Ratinho-Pc\ScreenShareSystem\android-app\app\src\main\AndroidManifest.xml:28:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <provider
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gianc\.gradle\caches\transforms-4\d98b3ae368ae295522c9594089f450e1\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+50            android:name="androidx.startup.InitializationProvider"
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gianc\.gradle\caches\transforms-4\d98b3ae368ae295522c9594089f450e1\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+51            android:authorities="com.screenshare.app.androidx-startup"
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gianc\.gradle\caches\transforms-4\d98b3ae368ae295522c9594089f450e1\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+52            android:exported="false" >
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gianc\.gradle\caches\transforms-4\d98b3ae368ae295522c9594089f450e1\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+53            <meta-data
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gianc\.gradle\caches\transforms-4\d98b3ae368ae295522c9594089f450e1\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+54                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gianc\.gradle\caches\transforms-4\d98b3ae368ae295522c9594089f450e1\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+55                android:value="androidx.startup" />
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\gianc\.gradle\caches\transforms-4\d98b3ae368ae295522c9594089f450e1\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+56            <meta-data
+56-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\gianc\.gradle\caches\transforms-4\a977988434526ab29102c5d41e4de2c1\transformed\lifecycle-process-2.8.0\AndroidManifest.xml:29:13-31:52
+57                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+57-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\gianc\.gradle\caches\transforms-4\a977988434526ab29102c5d41e4de2c1\transformed\lifecycle-process-2.8.0\AndroidManifest.xml:30:17-78
+58                android:value="androidx.startup" />
+58-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\gianc\.gradle\caches\transforms-4\a977988434526ab29102c5d41e4de2c1\transformed\lifecycle-process-2.8.0\AndroidManifest.xml:31:17-49
+59            <meta-data
+59-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+60                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+60-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+61                android:value="androidx.startup" />
+61-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+62        </provider>
+63
+64        <receiver
+64-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+65            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+65-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+66            android:directBootAware="false"
+66-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+67            android:enabled="true"
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+68            android:exported="true"
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+69            android:permission="android.permission.DUMP" >
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+70            <intent-filter>
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+71                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+72            </intent-filter>
+73            <intent-filter>
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+74                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+75            </intent-filter>
+76            <intent-filter>
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+77                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+78            </intent-filter>
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+80                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\gianc\.gradle\caches\transforms-4\5ce187f7d6bcbb33a8ec1023b7a307d5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+81            </intent-filter>
+82        </receiver>
+83    </application>
+84
+85</manifest>

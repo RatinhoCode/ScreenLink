@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(powershell -Command 'Get-CimInstance Win32_Process -Filter \"Name='\\\\''python.exe'\\\\''\" | Where-Object { $_.CommandLine -like '\\\\''*pc_ui*'\\\\'' } | Select-Object ProcessId, CommandLine')",
+      "Bash(powershell -Command 'Get-CimInstance Win32_Process -Filter \"Name='\\\\''python.exe'\\\\''\" | Where-Object { $_.CommandLine -like '\\\\''*pc_ui.py*'\\\\'' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force }')",
+      "Bash(rm -f \"/c/Users/gianc/Desktop/Ratinho-Pc/ScreenShareSystem/research/preview_output/pc_ui_\"*.png)",
+      "Bash(rm -f \"/c/Users/gianc/AppData/Local/Temp/claude/C--Users-gianc-Desktop-Ratinho-Pc/96d904cc-1ee9-48ed-a6cf-7fa89c96aaa7/scratchpad/pc_ui_\"*.py)",
+      "PowerShell(Start-Process -FilePath \"cmd.exe\" -ArgumentList '/c \"\"C:\\\\Users\\\\gianc\\\\Desktop\\\\Ratinho-Pc\\\\ScreenShareSystem\\\\server\\\\start_server.bat\" > \"C:\\\\Users\\\\gianc\\\\Desktop\\\\Ratinho-Pc\\\\ScreenShareSystem\\\\server\\\\_test_log.txt\" 2>&1\"' -WorkingDirectory \"C:\\\\Users\\\\gianc\\\\Desktop\\\\Ratinho-Pc\\\\ScreenShareSystem\\\\server\")"
+    ]
+  }
+}

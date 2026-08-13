@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Permite tráfego ws:// (não criptografado) para o IP local do servidor Python -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

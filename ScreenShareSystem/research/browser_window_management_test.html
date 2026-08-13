@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Teste: APIs de tela do navegador (gratuitas)</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #101318; color: #fff; padding: 24px; max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 20px; }
+  section { background: #1b1f27; border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+  button { background: #4c8dff; color: #fff; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  #monitorList { list-style: none; padding: 0; }
+  #monitorList li { padding: 8px; background: #232833; border-radius: 6px; margin-bottom: 6px; }
+  .error { color: #ff6b6b; }
+  .ok { color: #6bffb0; }
+  video { width: 100%; border-radius: 8px; margin-top: 12px; background: #000; }
+  code { background: #232833; padding: 2px 6px; border-radius: 4px; }
+</style>
+</head>
+<body>
+  <h1>Teste local: APIs nativas de tela do navegador</h1>
+  <p>Este arquivo roda 100% local (abra direto no Chrome/Edge). Não envia nada para nenhum servidor.</p>
+
+  <section>
+    <h2>1) Detecção de monitores — Window Management API</h2>
+    <p><code>window.getScreenDetails()</code> — só existe em navegadores Chromium (Chrome/Edge 100+), atrás de permissão do usuário.</p>
+    <button id="btnDetect">Detectar monitores</button>
+    <p id="detectStatus"></p>
+    <ul id="monitorList"></ul>
+  </section>
+
+  <section>
+    <h2>2) Captura + preview — Screen Capture API (getDisplayMedia)</h2>
+    <p>Suportada por todos os navegadores modernos, mas <strong>sempre</strong> abre o seletor nativo do
+       sistema operacional — a página não escolhe o monitor por você, o usuário escolhe manualmente a cada vez.</p>
+    <button id="btnCapture">Selecionar tela e mostrar preview</button>
+    <button id="btnStop" disabled>Parar preview</button>
+    <p id="captureStatus"></p>
+    <video id="preview" autoplay muted></video>
+  </section>
+
+  <script>
+    const detectStatus = document.getElementById('detectStatus');
+    const monitorList = document.getElementById('monitorList');
+    const captureStatus = document.getElementById('captureStatus');
+    const video = document.getElementById('preview');
+    const btnCapture = document.getElementById('btnCapture');
+    const btnStop = document.getElementById('btnStop');
+    let currentStream = null;
+
+    document.getElementById('btnDetect').addEventListener('click', async () => {
+      monitorList.innerHTML = '';
+      if (!('getScreenDetails' in window)) {
+        detectStatus.innerHTML =
+          '<span class="error">Não suportado neste navegador. ' +
+          'A Window Management API só existe em Chrome/Edge (Chromium) 100+. ' +
+          'Firefox e Safari não implementam essa API — não há como listar os monitores via JS neles.</span>';
+        return;
+      }
+      try {
+        const details = await window.getScreenDetails(); // pede permissão ao usuário
+        detectStatus.innerHTML = `<span class="ok">${details.screens.length} monitor(es) detectado(s).</span>`;
+        details.screens.forEach((s, i) => {
+          const li = document.createElement('li');
+          const primary = s.isPrimary ? ' (primário)' : '';
+          li.textContent = `Monitor ${i + 1} — ${s.width}x${s.height} (posição: ${s.left},${s.top})${primary}`;
+          monitorList.appendChild(li);
+        });
+      } catch (err) {
+        detectStatus.innerHTML = `<span class="error">Permissão negada ou erro: ${err.message}</span>`;
+      }
+    });
+
+    btnCapture.addEventListener('click', async () => {
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getDisplayMedia) {
+        captureStatus.innerHTML = '<span class="error">Este navegador não suporta getDisplayMedia (Screen Capture API).</span>';
+        return;
+      }
+      try {
+        // "displaySurface: monitor" só é uma DICA de preferência — o navegador
+        // ainda mostra o seletor nativo, o usuário escolhe manualmente qual tela.
+        currentStream = await navigator.mediaDevices.getDisplayMedia({
+          video: { displaySurface: 'monitor' },
+          audio: false,
+        });
+        video.srcObject = currentStream;
+        captureStatus.innerHTML = '<span class="ok">Preview ativo. Você escolheu a tela no seletor do sistema.</span>';
+        btnStop.disabled = false;
+
+        currentStream.getVideoTracks()[0].addEventListener('ended', () => {
+          captureStatus.innerHTML = '<span class="ok">Compartilhamento encerrado pelo usuário/sistema.</span>';
+          btnStop.disabled = true;
+        });
+      } catch (err) {
+        // NotAllowedError = usuário cancelou o seletor ou negou permissão
+        captureStatus.innerHTML = `<span class="error">Não foi possível capturar: ${err.name} — ${err.message}</span>`;
+      }
+    });
+
+    btnStop.addEventListener('click', () => {
+      if (currentStream) {
+        currentStream.getTracks().forEach((t) => t.stop());
+        video.srcObject = null;
+        currentStream = null;
+        btnStop.disabled = true;
+        captureStatus.textContent = 'Preview parado.';
+      }
+    });
+  </script>
+</body>
+</html>

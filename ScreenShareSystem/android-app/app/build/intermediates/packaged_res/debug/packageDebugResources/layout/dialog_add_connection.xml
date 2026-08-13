@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/surface"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/editIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edit_text"
+        android:hint="@string/hint_ip"
+        android:inputType="text"
+        android:textColorHint="@color/text_secondary"
+        android:textColor="@color/text_primary"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/editPort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edit_text"
+        android:hint="@string/hint_port"
+        android:inputType="number"
+        android:text="8765"
+        android:textColorHint="@color/text_secondary"
+        android:textColor="@color/text_primary"
+        android:textCursorDrawable="@null" />
+
+    <TextView
+        android:id="@+id/dialogStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/text_secondary"
+        android:text="@string/select_monitor_title" />
+
+    <RadioGroup
+        android:id="@+id/monitorGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" />
+
+</LinearLayout>

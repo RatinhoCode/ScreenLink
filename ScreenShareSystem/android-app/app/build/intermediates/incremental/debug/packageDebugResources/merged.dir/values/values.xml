@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#4C8DFF</color>
+    <color name="background">#101318</color>
+    <color name="surface">#1B1F27</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#9AA4B2</color>
+    <string name="app_name">Screen Share</string>
+    <string name="btn_add_screen">+</string>
+    <string name="btn_close">Fechar</string>
+    <string name="btn_connect">Conectar</string>
+    <string name="btn_fullscreen">Tela Cheia</string>
+    <string name="btn_mouse_off">🖱️ Mouse: OFF</string>
+    <string name="btn_mouse_on">🖱️ Mouse: ON</string>
+    <string name="btn_rotate">Girar</string>
+    <string name="btn_screenshot">Print</string>
+    <string name="connecting_countdown">Conectando… %1$d s</string>
+    <string name="connection_closed">Conexão encerrada</string>
+    <string name="connection_failed">Falha na conexão</string>
+    <string name="connection_timeout">Tempo esgotado ao conectar</string>
+    <string name="dialog_add_title">Nova conexão</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="fps_30">30 FPS</string>
+    <string name="fps_60">60 FPS</string>
+    <string name="hint_ip">IP do servidor (ex: 192.168.0.10)</string>
+    <string name="hint_port">Porta</string>
+    <string name="label_click_duration">Duração da animação de clique</string>
+    <string name="label_click_effects">Efeitos de clique</string>
+    <string name="label_highlight_opacity">Transparência</string>
+    <string name="label_highlight_size">Tamanho do destaque</string>
+    <string name="mouse_settings_title">Destaque do mouse</string>
+    <string name="no_frame_yet">Aguardando imagem…</string>
+    <string name="screenshot_failed">Não foi possível salvar o print</string>
+    <string name="screenshot_saved">Print salvo na galeria</string>
+    <string name="select_monitor_title">Escolha a tela para compartilhar</string>
+    <string name="tab_screen_format">Tela %1$d</string>
+    <style name="Theme.ScreenShare" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:editTextColor">@color/text_primary</item>
+    </style>
+    <style name="ThemeOverlay.ScreenShare.Dialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:editTextColor">@color/text_primary</item>
+    </style>
+</resources>

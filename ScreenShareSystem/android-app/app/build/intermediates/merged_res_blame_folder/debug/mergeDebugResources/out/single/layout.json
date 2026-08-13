@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-mergeDebugResources-32:\\layout\\view_screen.xml",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\layout\\view_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-mergeDebugResources-32:\\layout\\dialog_add_connection.xml",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\layout\\dialog_add_connection.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-mergeDebugResources-32:\\layout\\item_add_tab.xml",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\layout\\item_add_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-mergeDebugResources-32:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.screenshare.app-mergeDebugResources-32:/layout/activity_main.xml",
+        "source": "com.screenshare.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-mergeDebugResources-32:\\layout\\item_tab.xml",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\layout\\item_tab.xml"
+    },
+    {
+        "merged": "com.screenshare.app-mergeDebugResources-32:/layout/dialog_mouse_settings.xml",
+        "source": "com.screenshare.app-main-35:/layout/dialog_mouse_settings.xml"
+    }
+]

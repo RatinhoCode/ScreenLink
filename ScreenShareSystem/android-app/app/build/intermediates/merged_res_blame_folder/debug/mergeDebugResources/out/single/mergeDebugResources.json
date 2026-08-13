@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-debug-33:\\layout_view_screen.xml.flat",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\layout\\view_screen.xml"
+    },
+    {
+        "merged": "com.screenshare.app-debug-33:/layout_dialog_mouse_settings.xml.flat",
+        "source": "com.screenshare.app-main-35:/layout/dialog_mouse_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-debug-33:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-debug-33:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-debug-33:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-debug-33:\\drawable_bg_dialog.xml.flat",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\drawable\\bg_dialog.xml"
+    },
+    {
+        "merged": "com.screenshare.app-debug-33:/layout_activity_main.xml.flat",
+        "source": "com.screenshare.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-debug-33:\\layout_item_add_tab.xml.flat",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\layout\\item_add_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-debug-33:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-debug-33:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-debug-33:\\layout_item_tab.xml.flat",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\layout\\item_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-debug-33:\\layout_dialog_add_connection.xml.flat",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\layout\\dialog_add_connection.xml"
+    },
+    {
+        "merged": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-debug-33:\\drawable_bg_edit_text.xml.flat",
+        "source": "C:\\Users\\gianc\\.gradle\\daemon\\8.6\\com.screenshare.app-main-35:\\drawable\\bg_edit_text.xml"
+    }
+]

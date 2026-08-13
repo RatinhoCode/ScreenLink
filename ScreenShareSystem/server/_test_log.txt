@@ -1,0 +1,21 @@
+============================================
+  ScreenShareSystem - Servidor
+============================================
+
+Verificando se ja existe um servidor na porta 8765...
+
+Verificando dependencias Python...
+
+Iniciando servidor...
+Para PARAR: feche esta janela ou pressione Ctrl+C.
+(Fechar a janela encerra o processo corretamente, sem deixar nada travado.)
+
+2026-08-12 16:18:17,774 [INFO] Monitor selecionado para compartilhamento: 1
+2026-08-12 16:18:18,933 [INFO] PC UI Mode ativo (Ctrl+Alt+U mostra/esconde o painel).
+2026-08-12 16:18:18,937 [INFO] server listening on 0.0.0.0:8765
+2026-08-12 16:18:18,937 [INFO] Servidor de compartilhamento de tela rodando.
+2026-08-12 16:18:18,938 [INFO] Monitor compartilhado: 1
+2026-08-12 16:18:18,938 [INFO] Conecte o app Android em: ws://192.168.0.9:8765
+2026-08-12 16:20:31,718 [INFO] connection open
+2026-08-12 16:20:31,719 [INFO] Cliente conectado: ('192.168.0.11', 37744)
+2026-08-12 16:27:24,463 [INFO] Cliente desconectado: ('192.168.0.11', 37744)
